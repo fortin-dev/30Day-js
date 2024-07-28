@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Modification</title>
+</head>
+
+<body>
+    <div class="container">
+        <img style="height: 350px; " id="myProfile" src="/Day_9/profile.png" alt="">
+    </div>
+    <div class="inforamation">
+        <h1 id="head1" class="remov" >This is heading 1</h1>
+        <h2 id="head2" > This is heading 2</h2>
+    </div>
+</body>
+<script>
+    //Task 7 : change attributes
+    const changeSource = document.getElementById("myProfile");
+    changeSource.src = '/Day_9/new-profile.png'
+
+    //Task 8 : add and remove a css class to/from an html element
+    document.getElementById("head1").classList.remove("remov");
+    document.getElementById("head1").classList.add("yellow");
+    </script>
+    <style>
+        .remov{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+
+        }
+    </style>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manupulation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 id="name">My Name is Fortin</h1>
+        </div>
+    </div>
+</body>
+<script>
+
+    //Task 1 : use getElementById to change the textContent
+    const changeContent = document.getElementById("name")
+    changeContent.innerHTML = "Well my name is still fortin"
+
+    ////Task 2 : use getElementByClassName to change the bg color
+   document.getElementsByClassName('heading')[0].style.backgroundColor = "red";
+
+    
+    
+</script>
+
+</html>

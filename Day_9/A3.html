@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing Elements</title>
+</head>
+<body>
+    <div class="existing">
+        <h1 id="heading">My Name is fortin</h1>
+    </div>
+
+    <ul id="lists">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+<script>
+    //Task 5 : remove a html element
+    const head = document.querySelector("h1")
+    head.remove();
+
+    //Task 5 : remove last child of a html element
+    const removeLi = document.querySelector("li:last-child")
+    removeLi.remove()
+</script>
+</html>

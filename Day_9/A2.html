@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="existing">
+        <h1 id="heading">My Name is fortin</h1>
+    </div>
+
+    <ul id="lists">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    
+</body>
+<script>
+    // Task 3 : create a new div with some textcontent and add it to body
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = "hola"
+    document.body.append(newDiv)
+    newDiv.setAttribute("class", "new")
+
+    // Task 4 : add a li to existing ul
+    let newli = document.createElement("li")
+    let newnode = document.createTextNode("new element")
+    newli.appendChild(newnode)
+    document.getElementById("lists").appendChild(newli)
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events 2</title>
+</head>
+<style>
+    #block{
+        height: 200px;
+        width: 200px;
+        background-color: #b43636;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="block">
+        </div>
+    </div>
+</body>
+<script>
+    const bgColor = document.querySelector('#block');
+    bgColor.addEventListener('mouseover', (e)=>{
+        bgColor.style.backgroundColor = 'green';
+    });
+    bgColor.addEventListener('mouseout', (e)=>{
+        bgColor.style.backgroundColor = '';
+    });
+</script>
+</html>

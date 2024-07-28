@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, rerum repellendus? Pariatur unde eligendi voluptas omnis mollitia reiciendis iusto, voluptatem, incidunt itaque molestias blanditiis tempora alias, totam magni cumque aut?
+        Incidunt saepe facere nihil quibusdam reiciendis illum ratione fuga aliquam alias ab. Assumenda amet rem officiis in minus, placeat autem. Non placeat accusamus alias magni totam fugit quam eveniet minus!</p>
+        <h1 style="border: 5px solid blue;" id="mousehov">It's Colour changes</h1>
+    </div>
+</body>
+<script>
+    //Task 9: add event listner which changes textContent of the element on click
+    const parag = document.getElementById("para")
+    parag.addEventListener("click", ()=>{
+        parag.textContent = "wooooaaw , don't touch it man  "
+    })
+    const hoverChange = document.getElementById("mousehov")
+    hoverChange.addEventListener("mouseover", ()=>{
+        hoverChange.style.border='5px solid black'
+    })
+    // Task 10 :    
+</script>
+</html>

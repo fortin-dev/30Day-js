@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events 3</title>
+</head>
+<style>
+    #key{
+        height: 30px;
+        width: 250px;
+    }
+</style>
+<body>
+    <div id="container">
+        <input type="text" placeholder="Press Key" id="key">
+        <p id="display"></p>
+    </div>
+</body>
+<script>
+    const keyPressed = document.querySelector('#key');
+    keyPressed.addEventListener('keydown',(e)=>{
+        console.log(keyPressed.value);
+    });
+    const para = document.querySelector('#display');
+    keyPressed.addEventListener('keyup',(e)=>{
+        para.innerHTML= keyPressed.value;
+    })
+</script>
+</html>

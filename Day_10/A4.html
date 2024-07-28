@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events 4</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 140px;
+    }
+    select{
+        height: 30px;
+        width: 150px;
+        font-size: 1rem;
+    }
+    #display{
+        height: 150px;
+        width: 150px;
+        background-color: #e6dbdb;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    #display button{
+        color: black;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <input id="texts" type="text">
+            <button id="sub" >submit</button>
+        </form>
+        <select name="change paragraph" id="drop">
+            <option value="text1">Text1</option>
+            <option value="text2">Text2</option>
+            <option value="text3">Text3</option>
+            <option value="text4">Text4</option>
+        </select>
+        <p id="display"></p>
+        <button id="clik">Show</button>
+    </div>
+</body>
+<script>
+    const forms = document.querySelector('form');
+    forms.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        console.log(e);
+    })
+
+    const select =  document.querySelector('#drop');
+    const para = document.querySelector('#display');
+    const btn = document.querySelector('#clik');
+    btn.addEventListener('click',function (){
+        para.innerHTML = select.value;
+    })
+    
+</script>
+</html>

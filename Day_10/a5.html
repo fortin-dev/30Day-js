@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 5</title>
+</head>
+<style>
+    body{
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div id="container">
+        <ul id="ulist">
+            <li>TEXT 1</li>
+            <li>TEXT 2</li>
+            <li>TEXT 3</li>
+            <li>TEXT 4</li>
+            <li>TEXT 5</li>
+        </ul>
+
+        <ol id="olist"></ol>
+    </div>
+</body>
+<script>
+    const ulist = document.querySelector('#ulist')
+    ulist.addEventListener('click', function (e){
+        console.log(e.target.innerHTML);
+    });
+
+    const newOl = document.querySelector('#olist');
+    for(i=1; i<=10; i++){
+        const newli = document.createElement('li');
+        newli.innerHTML = `newText${i}`;
+        newOl.appendChild(newli);
+    };
+
+    newOl.addEventListener('click', function (e){
+        console.log(e.target.innerHTML);
+    })
+</script>
+</html>

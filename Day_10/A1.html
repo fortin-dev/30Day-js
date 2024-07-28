@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<style>
+    #myImg{
+        height: 200px;
+    }
+</style>
+<body>
+    <div class="container">
+        <p id="text">Click to change content</p>
+
+        <img id="myImg" src="imageR.png" alt="image">
+    </div>
+</body>
+<script>
+    const txt = document.querySelector('#text')
+    txt.addEventListener('click',(e)=>{
+        txt.innerHTML = 'hurrey! you changed the content'
+    });
+
+    const image =document.querySelector("#myImg")
+    image.addEventListener('dblclick', (e)=>{
+        image.style.display = 'none';
+    })
+</script>
+</html>
